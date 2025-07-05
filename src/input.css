@@ -1,0 +1,176 @@
+/* Leto & Lemon Font Added */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lemon&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --container-width: 1200px;
+    --color-logo-icon: #0B7D16;
+    --drop-shadow-primary: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /* line border */
+    --color-line:#D6DDEE;
+    /* Colors */
+    --color-primary: #F53838;
+    --color-secondary: rgba(245, 56, 56, 0.35);
+    --color-typography: #3C3939;
+    --color-sky:#3E6BE0;
+    --color-white: #fff;
+    /* Box Color */
+    --color-box:#D6EEE0;
+    /* Text Color */
+    --color-primary-text-clr: #4F5665;
+    --color-primary-heading-clr: #0B132A;
+    --font-primary: "Lato", sans-serif;
+    --font-lemon: "Lemon", serif;
+    /* background color */
+    --color-background:#F5F5F5;
+    /* Breakpoint */
+    --breakpoint-xs: 350px;
+    /*extra small for mobile device*/
+    --breakpoint-sm: 450px;
+    /*small for mobile device*/
+    --breakpoint-md: 768px;
+    /*lablet device*/
+    --breakpoint-lg: 992px;
+    /*laptop device*/
+    --breakpoint-xl: 1200px;
+    /*large laptop device*/
+    --breakpoint-xxl: 1440px;
+    /*Extra large laptop device*/
+    /* Animation */
+    /* Logo animation */
+    --animate-logo-animate: logoanim 3s linear infinite;
+    --animate-loto-text: logoTextAnim 2s linear infinite;
+    --animate-custom-bounce:bounced 1s linear infinite;
+    /* Logo animation */
+}
+
+@keyframes logoanim {
+    0% {
+        transform: translateX(-30px);
+        background-color:var(--color-logo-icon);
+        opacity: 0;
+    }
+
+    /* Animation active for the first 50% of the duration (1 second) */
+    15% {
+        /* Quarter way through the total 2s cycle = 0.5s into the pulse */
+        transform: translateX(0) rotateX(90deg);
+
+        background-color: var(--color-primary);
+        opacity: 0.8;
+    }
+    30%{
+        transform: translateX(0);
+        background-color:var(--color-logo-icon) ;
+        opacity: 1;
+    }
+
+    50% {
+        /* Half way through the total 2s cycle = 1s into the pulse, where it ends */
+        transform: translateX(0);
+        background-color:var(--color-logo-icon) ;
+        opacity: 1;
+    }
+
+    /* The element remains in its final state from 50% to 100% (for 1 second) */
+    51% {
+        /* Slight delay before resetting, ensures it doesn't jump */
+        transform: translateX(0);
+        background-color:var(--color-logo-icon) ;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        background-color:var(--color-logo-icon) ;
+        opacity: 1;
+    }
+}
+
+@keyframes logoTextAnim {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(0);
+        opacity: .5;
+        color: dodgerblue;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    51% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes bounced {
+    0%{
+        transform: translateY(0);
+        background-color: var(--color-white);
+        opacity: 1;
+    }
+    25%{
+        /* transform: translateY(2px) skewX(20deg); */
+        transform: rotate(360deg);
+        background-color: var(--color-secondary);
+    }
+    30%{
+        transform: translateY(0);
+        opacity: 1;
+        background-color: aquamarine;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+        background-color: var(--color-white);
+    }
+    51%{
+         transform: translateY(0);
+        opacity: 1;
+        background-color: var(--color-white);
+    }
+    100%{
+         transform: translateY(0);
+        opacity: 1;
+        background-color: var(--color-white);
+    }
+}
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border no-underline list-none;
+    }
+
+    body {
+        @apply text-[16px] font-primary leading-[13px] transition-all duration-500 ease-in-out;
+    }
+}
+
+@layer components {
+    .e-a-d-logo-icon {
+        box-shadow: var(--drop-shadow-primary);
+    }
+
+    .e-a-d-logo-icon::after {
+        @apply absolute top-[50%] left-[50%] transform translate-[-50%] inset-[-1px] content-[""] bg-white rounded-full animate-custom-bounce;
+    }
+
+    .container {
+        @apply max-w-[1200px] w-full m-auto px-[16px];
+    }
+    .e-a-d-main-body-area{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+    }
+}
