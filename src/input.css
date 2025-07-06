@@ -40,7 +40,7 @@
     /* Animation */
     /* Logo animation */
     --animate-logo-animate: logoanim 3s linear infinite;
-    --animate-loto-text: logoTextAnim 2s linear infinite;
+    --animate-loto-text: logoTextAnim 3s linear infinite;
     --animate-custom-bounce:bounced 1s linear infinite;
     /* Logo animation */
 }
@@ -160,11 +160,15 @@
     .e-a-d-logo-icon {
         box-shadow: var(--drop-shadow-primary);
     }
-
     .e-a-d-logo-icon::after {
         @apply absolute top-[50%] left-[50%] transform translate-[-50%] inset-[-1px] content-[""] bg-white rounded-full animate-custom-bounce;
     }
-
+    .e-a-d-sidebar.fixed_sidebar{
+        top: 0 !important;
+        position: fixed;
+        left: 10px;
+        padding: 30px 0
+    }
     .container {
         @apply max-w-[1200px] w-full m-auto px-[16px];
     }

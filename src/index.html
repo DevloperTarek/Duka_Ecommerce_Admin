@@ -30,8 +30,7 @@
 
             <div class="e-a-d-search-bar hidden md:flex">
                 <form action="#" class="search-form">
-                    <div
-                        class="input-field relative bg-background max-w-[515px] h-[50px] flex items-center rounded-[8px]">
+                    <div class="input-field relative bg-background w-[515px] h-[50px] flex items-center rounded-[8px]">
                         <input type="text" id="text-field" placeholder="Search or type a command"
                             class="w-full pl-[52px] outline-0 text-[14px] px-[11px] py-[10px] leading-[13px] font-[500] text-[#3C3939] focus:outline-2 focus:outline-offset-2 h-full focus:outline-primary rounded-[8px] pl-[]" />
                         <label for="text-field" id="text-field"
@@ -53,12 +52,12 @@
                     <span class="text-white font-[800] drop-shadow-primary text-[12px]"><i
                             class="bx bx-plus shadow-sm bg-transparent"></i> Create</span>
                 </button>
-                <span class="cursor-pointer transition-all duration-300 hover:shadow-sm"><i
+                <span class="cursor-pointer transition-all duration-500 hover:shadow-sm"><i
                         class="bx bx-bell"></i></span>
-                <span class="cursor-pointer transition-all duration-300 hover:shadow-sm"><i
+                <span class="cursor-pointer transition-all duration-500 hover:shadow-sm"><i
                         class="bx bx-pen"></i></span>
                 <div
-                    class="user-profile w-[20px] h-[20px] md:w-[36px] md:h-[36px] bg-primary rounded-[50%] sm:rounded-[100px] transition-all duration-300 hover:shadow-sm">
+                    class="user-profile w-[20px] h-[20px] md:w-[36px] md:h-[36px] bg-primary rounded-[50%] sm:rounded-[100px] transition-all duration-500 hover:shadow-sm">
                     <img src="./image/tarek-pic-3.jpg" alt="profile-pic"
                         class="h-full w-full object-cover rounded-[50%] xs:rounded-[100px] cursor-pointer transition-all duration-500 hover:drop-shadow-primary" />
                 </div>
@@ -69,93 +68,193 @@
     <!-- Header -->
     <div class="e-a-d-main-body-area">
         <!-- Sidebar -->
-        <aside class="e-a-d-sidebar sticky top-[123px] right-[10px] max-w-[245px] h-full overflow-y-auto">
+        <aside
+            class="e-a-d-sidebar pb-[70px] border-r border-r-[#EEF0F3] pr-[10px] top-[120px] right-[10px] w-[245px] h-full overflow-y-auto">
             <nav class="sidebar-nav">
                 <ul class="sidebar-nav-ul">
-                    <li class="sidebar-nav-li px-[11px] py-[8px] bg-background hover:bg-background rounded-[8px] mb-[17px]">
+                    <li class="sidebar-nav-li">
                         <a href="#"
-                            class="sidebar-nav-link text-blackfont-400 pt-[8px] pb-[8px] cursor-pointer flex items-center gap-[9px]">
+                            class="sidebar-nav-link hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px] text-blackfont-400 pt-[8px] pb-[8px] cursor-pointer flex items-center gap-[9px]">
                             <span class="sidebar-menu-link-icon flex items-center gap-[20px]">
-                                <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center"><i
+                                <span
+                                    class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center"><i
                                         class="bx bx-home font-[300]"></i></span>
                                 <span class="link-text text-[16px] capitalize">Home</span>
                             </span></a>
                     </li>
-                    <li class="sidebar-nav-li hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px]">
+                    <li class="sidebar-nav-li group relative">
                         <a href="#"
-                            class="sidebar-nav-link py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
+                            class="sidebar-nav-link group hover:bg-background rounded-[8px] mb-[5px] px-[11px] py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
                             <div class="sidebar-menu-link-icon flex items-center justify-between ">
                                 <div class="flex items-center gap-[20px]">
-                                    <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
+                                    <span
+                                        class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
                                         <i class="bx bx-building font-[300]"></i></span>
                                     <span class="link-text text-[16px] capitalize">Products</span>
                                 </div>
                                 <span
-                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center"><i
-                                        class="bx bx-chevron-down text-[36px] font-[200]"></i></span>
+                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center">
+                                    <i
+                                        class="bx bx-chevron-down text-[36px] font-[200] transition-all duration-500 cursor-pointer group-hover:transform group-hover:rotate-[180deg]"></i>
+                                </span>
                             </div>
                         </a>
+                        <ul
+                            class="sidebar-dropdown group-hover:translate-y-[0] group-hover:opacity-[1] opacity-0 group-hover:static top-full grid grid-cols-[0] group-hover:grid-cols-1 absolute overflow-hidden transform translate-y-[-10px] w-full bg-background shadow-xl border-t-sky border-t-[5px] transition-all duration-500 ease-in-out">
+                            <div class="sidebar-show-with-grid h-0 group-hover:h-auto transition-all duration-500 ease-in-out">
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-1</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-2</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-3</a>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
-                    <li class="sidebar-nav-li hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px]">
+                    <li class="sidebar-nav-li group relative">
                         <a href="#"
-                            class="sidebar-nav-link py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
+                            class="sidebar-nav-link hover:bg-background rounded-[8px] mb-[5px] px-[11px] py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
                             <div class="sidebar-menu-link-icon flex items-center justify-between ">
                                 <div class="flex items-center gap-[20px]">
-                                    <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
+                                    <span
+                                        class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
                                         <i class="bx bx-street-view font-[300]"></i></span>
                                     <span class="link-text">Customers</span>
                                 </div>
                                 <span
-                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center"><i
-                                        class="bx bx-chevron-down text-[36px] font-[200]"></i></span>
+                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center">
+                                    <i
+                                        class="bx bx-chevron-down text-[36px] font-[200] transition-all duration-500 cursor-pointer group-hover:transform group-hover:rotate-[180deg]"></i>
+                                </span>
                             </div>
                         </a>
+                        <ul
+                            class="sidebar-dropdown group-hover:translate-y-[0] group-hover:opacity-[1] opacity-0 group-hover:static top-full grid grid-cols-[0] group-hover:grid-cols-1 absolute overflow-hidden transform translate-y-[-10px] w-full bg-background shadow-xl border-t-sky border-t-[5px] transition-all duration-500 ease-in-out">
+                            <div class="sidebar-show-with-grid h-0 group-hover:h-auto transition-all duration-500 ease-in-out">
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-1</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-2</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-3</a>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
-                    <li class="sidebar-nav-li hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px]">
+                    <li class="sidebar-nav-li group relative">
                         <a href="#"
-                            class="sidebar-nav-link py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
+                            class="sidebar-nav-link hover:bg-background rounded-[8px] mb-[5px] px-[11px] py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
                             <div class="sidebar-menu-link-icon flex items-center justify-between ">
                                 <div class="flex items-center gap-[20px]">
-                                    <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
+                                    <span
+                                        class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
                                         <i class="bx bxs-shopping-bag-alt font-[300]"></i></span>
                                     <span class="link-text">Shop</span>
                                 </div>
                                 <span
-                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center"><i
-                                        class="bx bx-chevron-down text-[36px] font-[200]"></i></span>
+                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center">
+                                    <i
+                                        class="bx bx-chevron-down text-[36px] font-[200] transition-all duration-500 cursor-pointer group-hover:transform group-hover:rotate-[180deg]"></i></span>
                             </div>
                         </a>
+                        <ul
+                            class="sidebar-dropdown group-hover:translate-y-[0] group-hover:opacity-[1] opacity-0 group-hover:static top-full grid grid-cols-[0] group-hover:grid-cols-1 absolute overflow-hidden transform translate-y-[-10px] w-full bg-background shadow-xl border-t-sky border-t-[5px] transition-all duration-500 ease-in-out">
+                            <div class="sidebar-show-with-grid transition-all duration-500 ease-in-out">
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-1</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-2</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-3</a>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
-                    <li class="sidebar-nav-li hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px]">
+                    <li class="sidebar-nav-li group relative">
                         <a href="#"
-                            class="sidebar-nav-link py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
+                            class="sidebar-nav-link hover:bg-background rounded-[8px] mb-[5px] px-[11px] py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
                             <div class="sidebar-menu-link-icon flex items-center justify-between ">
                                 <div class="flex items-center gap-[20px]">
-                                    <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
+                                    <span
+                                        class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
                                         <i class="bx bxs-tree"></i>
                                     </span>
                                     <span class="link-text">Income</span>
                                 </div>
                                 <span
-                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center"><i
-                                        class="bx bx-chevron-down text-[36px] font-[200]"></i></span>
+                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center">
+                                    <i
+                                        class="bx bx-chevron-down text-[36px] font-[200] transition-all duration-500 cursor-pointer group-hover:transform group-hover:rotate-[180deg]"></i></span>
                             </div>
                         </a>
+                        <ul
+                            class="sidebar-dropdown group-hover:translate-y-[0] group-hover:opacity-[1] opacity-0 group-hover:static top-full grid grid-cols-[0] group-hover:grid-cols-1 absolute overflow-hidden transform translate-y-[-10px] w-full bg-background shadow-xl border-t-sky border-t-[5px] transition-all duration-500 ease-in-out">
+                            <div class="sidebar-show-with-grid transition-all duration-500 ease-in-out">
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-1</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-2</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-3</a>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
-                    <li class="sidebar-nav-li hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px]">
+                    <li class="sidebar-nav-li group relative">
                         <a href="#"
-                            class="sidebar-nav-link py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
+                            class="sidebar-nav-link hover:bg-background rounded-[8px] mb-[5px] px-[11px] py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
                             <div class="sidebar-menu-link-icon flex items-center justify-between ">
                                 <div class="flex items-center gap-[20px]">
-                                    <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
-                                        <i class="bx bx-analyse font-[300]"></i></span>
-                                    <span class="link-text">Home</span>
+                                    <span
+                                        class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
+                                        <i class="bx bx-analyse font-[300]"></i>
+                                    </span>
+                                    <span class="link-text capitalize">Promote</span>
                                 </div>
                                 <span
-                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center"><i
-                                        class="bx bx-chevron-down text-[36px] font-[200]"></i></span>
+                                    class="text-[18px] font-[300] w-[36px] h-[36px] flex items-center justify-center text-center">
+                                    <i
+                                        class="bx bx-chevron-down text-[36px] font-[200] transition-all duration-500 cursor-pointer group-hover:transform group-hover:rotate-[180deg]"></i></span>
                             </div>
                         </a>
+                        <ul
+                            class="sidebar-dropdown group-hover:translate-y-[0] group-hover:opacity-[1] opacity-0 group-hover:static top-full grid grid-cols-[0] group-hover:grid-cols-1 invisible group-hover:visible absolute overflow-hidden transform translate-y-[-10px] w-full bg-background shadow-xl border-t-sky border-t-[5px] transition-all duration-500 ease-in-out">
+                            <div class="sidebar-show-with-grid h-[0px] group-hover:h-auto transition-all duration-500 ease-in-out">
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-1</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-2</a>
+                                </li>
+                                <li class="block w-full">
+                                    <a href="#"
+                                        class="nav-link block hover:pl-[25px] hover:bg-white capitalize transition-all duration-500 ease-in-out relative after:absolute after:left-[5px] after:top-[50%] after:transform after:translate-y-[-50%] after:w-[10px] after:h-[2px] after:bg-sky after:content-[''] after:scale-0 after:transition-all after:duration-500 after:ease-in-out hover:after:scale-[1] mb-[5px] px-[11px] py-[15px]">promote-3</a>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -168,9 +267,9 @@
             <!-- Sidebar Bottom List -->
 
             <ul>
-                <li class="sidebar-nav-li hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px]">
+                <li class="sidebar-nav-li relative z-10">
                     <a href="#"
-                        class="sidebar-nav-link py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
+                        class="sidebar-nav-link hover:bg-background rounded-[8px] mb-[17px] px-[11px] py-[8px] text-[#3C3939] hover:text-black font-400 cursor-pointer block">
                         <div class="sidebar-menu-link-icon flex items-center justify-between ">
                             <div class="flex items-center gap-[20px]">
                                 <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center">
@@ -178,13 +277,13 @@
                                 <span class="link-text text-[16px] capitalize">Help</span>
                             </div>
                             <span
-                                class="font-[300] rounded-full bg-line w-[36px] h-[36px] flex items-center justify-center text-center text-sky text-[16px] font-[500]">08</span>
+                                class="rounded-full bg-line w-[36px] h-[36px] flex items-center justify-center text-center text-sky text-[16px] font-[500]">08</span>
                         </div>
                     </a>
                 </li>
-                <li class="sidebar-nav-li px-[11px] py-[8px] hover:bg-background rounded-[8px] mb-[17px]">
+                <li class="sidebar-nav-li">
                     <a href="#"
-                        class="sidebar-nav-link text-blackfont-400 pt-[8px] pb-[8px] cursor-pointer flex items-center gap-[9px]">
+                        class="sidebar-nav-link px-[11px] py-[8px] hover:bg-background rounded-[8px] mb-[17px] text-blackfont-400 pt-[8px] pb-[8px] cursor-pointer flex items-center gap-[9px]">
                         <span class="sidebar-menu-link-icon flex items-center gap-[20px]">
                             <span class="text-[33px] font-[300] w-[36px] h-[36px] flex items-center justify-center"><i
                                     class="bx bx-arrow-to-right font-[300]"></i></span>
@@ -196,44 +295,111 @@
         </aside>
         <!-- Sidebar -->
 
-        <main class="e-a-d-sidebar-main-area bg-background p-[20px]">
+        <main class="e-a-d-sidebar-main-area absolute left-[250px] bg-background p-[20px]">
             <h1 class="text-[32px] font-bold text-black capitalize mb-[30px]">dashboard</h1>
             <div class="e-a-d-sidebar-main">
-                <div class="e-a-d-sidebar-main-left bg-white px-[15px] py-[10px]">
+                <div class="e-a-d-sidebar-main-left bg-white px-[35px] py-[10px]">
+                    <!-- Sidebar Head -->
                     <div class="sidebar-main-head flex items-center justify-between mb-[18px]">
                         <h3 class="text-[24px] font-bold text-black capitalize">Overview</h3>
-                        <select name="times" id="times" class="bg-background border-0 px-[27px] py-[20px] rounded-[8px] cursor-pointer transition-all duration-300 focus:outline-2 focus:outline-offset-2 focus:outline-primary">
-                            <option value="" class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
+                        <select name="times" id="times"
+                            class="bg-background border-0 px-[27px] py-[20px] rounded-[8px] cursor-pointer transition-all duration-500 focus:outline-2 focus:outline-offset-2 focus:outline-primary">
+                            <option value=""
+                                class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
                                 <span class="capitalize text-[16px] font-[500] text-black">All Time</span>
                             </option>
-                            <option value="101" class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
+                            <option value="101"
+                                class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
                                 <span class="capitalize text-[16px] font-[500] text-black">Morning</span>
                             </option>
-                            <option value="102" class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
+                            <option value="102"
+                                class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
                                 <span class="capitalize text-[16px] font-[500] text-black">Afternoon</span>
                             </option>
-                            <option value="103" class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
+                            <option value="103"
+                                class="text-[16px] px-[23px] py-[20px] bg-background hover:bg-primary hover:text-white">
                                 <span class="capitalize text-[16px] font-[500] text-black">Evening</span>
                             </option>
                         </select>
                     </div>
-                    <div class="sidebar-main-middle bg-background px-[10px] py-4 flex items-center justify-between gap-[20px]">
-                        <div class="sidebar-main-middle-box-1 cursor-pointer flex items-center py-[20px] px-[20px] justify-between max-w-[354px] w-full bg-white rounded-[10px]">
+                    <!-- Sidebar Main Middle -->
+                    <div
+                        class="sidebar-main-middle bg-background px-[10px] py-4 flex items-center justify-between gap-[20px] mb-[26px]">
+                        <div
+                            class="sidebar-main-middle-box-1 cursor-pointer flex items-center py-[20px] px-[20px] justify-between max-w-[354px] w-full bg-white rounded-[10px]">
                             <div class="box-1-content pl-9">
-                                <p class="mb-0 capitalize text-[16px] text-black font-[400] leading-[30px]">Customers</p>
+                                <p class="mb-0 capitalize text-[16px] text-black font-[400] leading-[30px]">Customers
+                                </p>
                                 <span class="text-[20px] text-black font-[800] leading-[30px]">10,243</span>
                             </div>
                             <div class="box-1-content-end">
-                                <span class="bg-box w-[54px] h-[28px] p-[10px] rounded-[100%] text-logo-icon text-[16px] font-[500]">8%</span>
+                                <span
+                                    class="bg-box w-[54px] h-[28px] p-[10px] rounded-[100%] text-logo-icon text-[16px] font-[500]">8%</span>
                             </div>
                         </div>
-                        <div class="sidebar-main-middle-box-1 cursor-pointer group flex items-center py-[20px] px-[20px] justify-between max-w-[354px] w-full bg-transparent transition-all duration-300 hover:bg-white rounded-[10px]">
+                        <div
+                            class="sidebar-main-middle-box-1 cursor-pointer group flex items-center py-[20px] px-[20px] justify-between max-w-[354px] w-full bg-transparent transition-all duration-500 hover:bg-white rounded-[10px]">
                             <div class="box-1-content pl-9">
                                 <p class="mb-0 capitalize text-[16px] text-black font-[400] leading-[30px]">Income</p>
                                 <span class="text-[20px] text-black font-[800] leading-[30px]">$39,403,450</span>
                             </div>
                             <div class="box-1-content-end">
-                                <span class="bg-white group-hover:bg-box transition-all duration-300 w-[54px] h-[28px] p-[10px] rounded-[100%] text-logo-icon text-[16px] font-[500]">8%</span>
+                                <span
+                                    class="bg-white group-hover:bg-box transition-all duration-500 w-[54px] h-[28px] p-[10px] rounded-[100%] text-logo-icon text-[16px] font-[500]">8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar Main Users -->
+                    <p class="mb-[40px]">Welcome to our <strong>new online experience</strong></p>
+                    <ul class="user-unorderlist flex items-center justify-center pb-[40px] mb-[30px]">
+                        <li
+                            class="orderlist relative cursor-pointer px-[60px] after:absolute after:right-0 after:top-[15%] after:h-[70%] after:content-[''] after:w-[1px] after:bg-line">
+                            <div class="user-profile-image mb-[9px] w-[68px] h-[68px] rounded-full cursor-pointer">
+                                <img src="./image/tarek-pic-3.jpg" class="w-full h-full object-cover rounded-full"
+                                    alt="user-profile" />
+                            </div>
+                            <h4 class="user-title mb-0">Johnson D.</h4>
+                        </li>
+                        <li
+                            class="orderlist relative cursor-pointer px-[60px] after:absolute after:right-0 after:top-[15%] after:h-[70%] after:content-[''] after:w-[1px] after:bg-line">
+                            <div class="user-profile-image mb-[9px] w-[68px] h-[68px] rounded-full cursor-pointer">
+                                <img src="./image/durlabh-kashyap-cover-photo.jpg"
+                                    class="w-full h-full object-cover rounded-full" alt="user-profile" />
+                            </div>
+                            <h4 class="user-title mb-0">Didinya J.</h4>
+                        </li>
+                        <li
+                            class="orderlist relative cursor-pointer px-[60px] after:absolute after:right-0 after:top-[15%] after:h-[70%] after:content-[''] after:w-[1px] after:bg-line">
+                            <div class="user-profile-image mb-[9px] w-[68px] h-[68px] rounded-full cursor-pointer">
+                                <img src="./image/tarek-pic-3.jpg" class="w-full h-full object-cover rounded-full"
+                                    alt="user-profile" />
+                            </div>
+                            <h4 class="user-title mb-0">Penny L.</h4>
+                        </li>
+                        <li class="orderlist relative cursor-pointer px-[60px]">
+                            <div class="user-profile-image mb-[9px] w-[68px] h-[68px] rounded-full cursor-pointer">
+                                <img src="./image/durlabh-kashyap-cover-photo.jpg"
+                                    class="w-full h-full bg-center object-cover rounded-full" alt="user-profile" />
+                            </div>
+                            <h4 class="user-title mb-0">Elon M.</h4>
+                        </li>
+                    </ul>
+                    <div class="user-income-chart px-[30px] py-[20px]">
+                        <div class="user-income-head mb-[30px] flex items-center justify-between">
+                            <h4 class="text-24 text-black capitalize mb-0">Total Income</h4>
+                            <select name="times" id="times"
+                                class="bg-background rounded-[8px] px-[20px] py-[10px] focus:outline-2 focus:outline-offset-2 focus:outline-sky shadow-sm text-[16px] text-black">
+                                <option value="">
+                                    All Times
+                                </option>
+                                <option value="102">Morning T</option>
+                                <option value="102">Night T</option>
+                                <option value="102">Afternoon T</option>
+                            </select>
+                        </div>
+                        <div class="user-income-chart">
+                            <div class="w-full md:w-2/3 lg:w-full mx-auto p-6 bg-white rounded-lg">
+                                <canvas id="myChart" class="h-[240px]"></canvas>
                             </div>
                         </div>
                     </div>
@@ -241,6 +407,8 @@
             </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/custom.js"></script>
     <!-- Ecommerce Admin Dashboard Design -->
 </body>
 
